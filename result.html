@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJA Summer Camp 2k26 Registration Result</title>
+    <link rel="icon" type="image/png" href="monogram.png">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgba(13, 13, 123, 0.95);
+            min-height: 100vh;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        .msg {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            background-color: rgba(255, 149, 0, 0.6);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 600px;
+        }
+        button {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            flex: 1;
+            min-width: 200px;
+        }
+        button:hover { background-color: #6b1d1d; }
+        hr { border: 0; border-top: 1px solid rgba(255,255,255,0.3); width: 100%; max-width: 800px; margin: 0; }
+    </style>
+</head>
+<body>
+    <h1 class="msg">Form submitted successfully!<br>Your prompt submission is highly appreciated!</h1>
+    <hr>
+    <div class="actions">
+        <button onclick="document.location='form.html'">Edit Form</button>
+        <button onclick="document.location='index.html'">Go Back to Home Page</button>
+    </div>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJA Summer Camp 2k26 Registration Form</title>
+    <link rel="icon" type="image/png" href="monogram.png">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgba(25, 34, 125, 0.95);
+            min-height: 100vh;
+            padding: 1rem;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            text-decoration: underline;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+        }
+        form {
+            background-color: bisque;
+            color: brown;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            padding: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        form label {
+            display: block;
+            margin-top: 0.8rem;
+            font-weight: bold;
+        }
+        form input {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #999;
+            border-radius: 4px;
+            margin-top: 0.3rem;
+        }
+        .row {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .row > div { flex: 1; min-width: 150px; }
+
+        input[type="submit"], .btn-home {
+            background-color: brown;
+            color: white;
+            border: none;
+            padding: 0.7rem 2rem;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            display: block;
+            width: 100%;
+        }
+        input[type="submit"]:hover, .btn-home:hover { background-color: #6b1d1d; }
+
+        .home-wrap {
+            max-width: 600px;
+            margin: 1.5rem auto;
+        }
+        hr { border: 0; border-top: 1px solid rgba(255,255,255,0.3); }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="result.html" method="get">
+        <label for="fname">Name of Game:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Name of Student:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <div class="row">
+            <div>
+                <label for="Class">Class:</label>
+                <input type="number" id="Class" name="cl" required>
+            </div>
+            <div>
+                <label for="sec">Section:</label>
+                <input type="text" id="sec" name="section" required>
+            </div>
+        </div>
+
+        <label for="cn">Contact Number:</label>
+        <input type="text" id="cn" name="contact_no" required>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div class="home-wrap">
+        <hr>
+        <button class="btn-home" onclick="document.location='index.html'">Back to Home</button>
+        <hr>
+    </div>
+</body>
+</html>

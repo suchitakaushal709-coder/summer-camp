@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJA Summer Camp 2k26</title>
+    <link rel="icon" type="image/png" href="monogram.png">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(12, 63, 129);
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .notice {
+            background-color: rgba(255, 242, 1, 0.53);
+            color: black;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            margin: 0;
+            text-align: center;
+        }
+        .disclaimer {
+            background-color: rgba(230, 22, 22, 0.546);
+            color: white;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            margin: 0;
+            text-align: center;
+        }
+        .header {
+            background-color: rgb(119, 52, 52);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .header img { height: 70px; width: 70px; }
+        .header h1 { margin: 0; font-size: 1.8rem; }
+        .header small { font-size: 0.9rem; display: block; margin-top: 0.3rem; }
+
+        .hero {
+            background-image: url(cover.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h2 {
+            font-family: 'Lucida Handwriting', cursive;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            margin: 0;
+        }
+        .hero small {
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+        .btn-enroll {
+            padding: 0.8rem 2rem;
+            color: rgba(101, 78, 78, 0.916);
+            border: none;
+            border-radius: 8px;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            background-color: rgba(240, 248, 255, 0.85);
+            cursor: pointer;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .btn-enroll:hover { background-color: white; }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0.5rem;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            border-radius: 5px;
+            border-style: dashed;
+            border-color: antiquewhite;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: clamp(1rem, 2.5vw, 1.8rem);
+            text-align: center;
+            color: beige;
+            padding: 1rem;
+            background-color: brown;
+        }
+        tr:nth-child(even) td { background-color: rgb(250, 0, 0); }
+        td:hover {
+            background-color: bisque;
+            color: black;
+            font-style: italic;
+        }
+
+        .footer-info {
+            text-align: center;
+            font-family: 'Lucida Handwriting', cursive;
+            font-size: 1.1rem;
+            padding: 1rem;
+        }
+
+        hr { border: 0; border-top: 1px solid rgba(255,255,255,0.3); margin: 1rem 0; }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.3rem; }
+            .header img { height: 50px; width: 50px; }
+            th, td { padding: 0.6rem; }
+            .hero { min-height: 300px; padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <p class="notice">Note: View in <em>landscape mode</em> for a better experience!</p>
+    <p class="disclaimer">Disclaimer: This website is built for <em>recreational purposes</em> and does not hold <b>any authentication</b>.</p>
+    <hr>
+    <div class="header">
+        <img src="monogram.png" alt="SJA Monogram">
+        <h1>St. Joseph's Academy<small>12 Rajpur Road, Dehradun - 248001</small></h1>
+    </div>
+    <hr>
+    <div class="hero">
+        <h2>Summer Camp</h2>
+        <small>2026 - 27</small>
+        <button class="btn-enroll" onclick="document.location='form.html'">Enroll Now</button>
+    </div>
+    <hr>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Events</th>
+                <th>Fees</th>
+                <th>Timings</th>
+            </tr>
+            <tr><td>Football</td><td>Rs. 2000</td><td>6:30am - 8:30am</td></tr>
+            <tr><td>Cricket</td><td>Rs. 1500</td><td>6:30am - 8:30am</td></tr>
+            <tr><td>Badminton</td><td>Rs. 2500</td><td>6:30am - 8:30am</td></tr>
+            <tr><td>Basketball</td><td>Rs. 2000</td><td>6:30am - 8:30am</td></tr>
+            <tr><td>Athletics</td><td>Rs. 1500</td><td>6:30am - 8:00am</td></tr>
+            <tr><td>Lawn Tennis</td><td>Rs. 2000</td><td>6:30am - 8:30am</td></tr>
+            <tr><td>Skating</td><td>Rs. 1500</td><td>6:30am - 8:30am</td></tr>
+        </table>
+    </div>
+    <hr>
+    <div style="text-align:center; padding: 1rem;">
+        <button class="btn-enroll" onclick="document.location='form.html'">Register Now</button>
+    </div>
+    <hr>
+    <p class="footer-info">For further details email us at <b><i><u>stjosephacademy709@gmail.com</u></i></b></p>
+    <hr>
+</body>
+</html>
